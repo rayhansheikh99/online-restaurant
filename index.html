@@ -19,7 +19,7 @@
     <section class="">
 
         <!-- nav bar  -->
-        <nav class="container mx-auto flex justify-between items-center h-28">
+        <nav class="container mx-auto px-5 flex justify-between items-center h-28">
             <div>
                 <img src="./assets/images/home/logo.png" alt="">
             </div>
@@ -40,17 +40,16 @@
         <!-- hero section  -->
 
         <div class="h-[750px] w-full bg-[#5EAE53] relative overflow-hidden">
-            <img src="./assets/images/home/pattern.png" alt="pattern" class="absolute right-0 top-16 z-[1]">
+            <img src="./assets/images/home/pattern1.png" alt="pattern" class="absolute right-0 bottom-0 z-[1]">
             <img src="./assets/images/home/pattern (2).png" alt="pattern" class="absolute left-0 top-5 z-[0]">
-            <div class="container mx-auto grid grid-cols-2 items-center gap-5 relative z-[1] h-full w-full">
+            <div class="container mx-auto px-5 grid grid-cols-2 items-center gap-5 relative z-[1] h-full w-full">
                 <div class="justify-self-start">
                     <h1 class="max-w-[420px] text-[40px] text-[#F6B76C] font-caveat">Savor the Flavors of the World</h1>
                     <h1 class="max-w-[600px] text-[56px] font-bold leading-[56px] text-white">Explore a Culinary Journey
                         with Our Global Cuisine Selection</h1>
                     <div class="mt-8 relative w-[426px]">
                         <input type="text" placeholder="Find your favorite dish" class="w-[426px] rounded-xl h-11 px-5">
-                        <button
-                            class="bg-[#EB8E78] text-white w-[105px] rounded-xl h-10 absolute top-0.5 right-0.5">Search</button>
+                        <button class="btn-two h-10 absolute top-0.5 right-0.5">Search</button>
                     </div>
                 </div>
                 <div class="justify-self-end -mr-10">
@@ -62,8 +61,8 @@
 
         <!-- best sell items  -->
 
-        <div class="container mx-auto py-16">
-            <h1>Popular</h1>
+        <div class="container mx-auto px-5 py-16">
+            <h1 class="btn-one">Popular</h1>
             <div class="flex justify-between mt-3 mb-8">
                 <div class="">
                     <h1 class="text-[45px] mb-3">Best Sell Items</h1>
@@ -157,11 +156,106 @@
             </div>
         </div>
 
+        <!-- pickup delivery  -->
+
+        <div class="container mx-auto px-5 grid grid-cols-2 items-center gap-5 relative">
+            <img src="./assets/images/home/pattern3.png" alt="pattern" class="absolute right-0 top-5">
+            <div class="justify-self-start">
+                <img src="./assets/images/home/pickup.png" alt="">
+            </div>
+            <div class="justify-self-end space-y-3">
+                <p class="btn-one">ORDER ONLINE</p>
+                <h1 class="text-[45px] leading-[50px] font-bold">Brunch Bonanza: <br />Quick and Easy</h1>
+                <p class="text-gray-400">Encuentra las fondas cercanas por sí quieres hacer pick up directo en las
+                    tiendas.</p>
+                <div class="w-full flex justify-between items-center gap-3 pt-5">
+                    <div class="relative w-full h-9 ">
+                        <input type="text" placeholder="Zip code" class="border w-full h-9 rounded-[10px] px-5">
+                        <span
+                            class="material-icons text-gray-400 absolute right-5 top-1/2 -translate-y-1/2">location_on</span>
+                    </div>
+                    <p class="btn-two w-max">Pickup</p>
+                    <p class="btn-one w-max">Delivery</p>
+                </div>
+            </div>
+        </div>
+
+        <!-- timetable  -->
+
+        <div class="bg-[#5EAE53] py-10 overflow-hidden">
+            <div class="grid grid-cols-3 gap-5 container mx-auto px-5 items-center ">
+                <div class="space-y-3 justify-self-start">
+                    <h3 class="text-lg text-white font-bold">Opening Hours</h3>
+                    <div class="flex items-center justify-between gap-10 bg-[#6DD35E] text-white rounded px-2">
+                        <p>Monday</p>
+                        <p>00:00 - 23:55</p>
+                    </div>
+                    <div class="flex items-center justify-between gap-10 bg-[#66B95A] text-white rounded px-2">
+                        <p>Monday</p>
+                        <p>00:00 - 23:55</p>
+                    </div>
+                    <div class="flex items-center justify-between gap-10 bg-[#6DD35E] text-white rounded px-2">
+                        <p>Monday</p>
+                        <p>00:00 - 23:55</p>
+                    </div>
+                    <div class="flex items-center justify-between gap-10 bg-[#66B95A] text-white rounded px-2">
+                        <p>Monday</p>
+                        <p>00:00 - 23:55</p>
+                    </div>
+                    <div class="flex items-center justify-between gap-10 bg-[#6DD35E] text-white rounded px-2">
+                        <p>Monday</p>
+                        <p>00:00 - 23:55</p>
+                    </div>
+                    <div class="flex items-center justify-between gap-10 bg-[#66B95A] text-white rounded px-2">
+                        <p>Monday</p>
+                        <p>00:00 - 23:55</p>
+                    </div>
+                    <div class="flex items-center justify-between gap-10 bg-[#6DD35E] text-white rounded px-2">
+                        <p>Monday</p>
+                        <p>00:00 - 23:55</p>
+                    </div>
+                </div>
+                <div class="justify-self-center">
+                    <img src="./assets/images/home/time.png" alt="time" class="-mb-52">
+                </div>
+                <div class="space-y-3 justify-self-end">
+                    <h3 class="text-lg text-white font-bold">Delivery Time</h3>
+                    <div class="flex items-center justify-between gap-10 bg-[#6DD35E] text-white rounded px-2">
+                        <p>Monday</p>
+                        <p>00:00 - 23:55</p>
+                    </div>
+                    <div class="flex items-center justify-between gap-10 bg-[#66B95A] text-white rounded px-2">
+                        <p>Monday</p>
+                        <p>00:00 - 23:55</p>
+                    </div>
+                    <div class="flex items-center justify-between gap-10 bg-[#6DD35E] text-white rounded px-2">
+                        <p>Monday</p>
+                        <p>00:00 - 23:55</p>
+                    </div>
+                    <div class="flex items-center justify-between gap-10 bg-[#66B95A] text-white rounded px-2">
+                        <p>Monday</p>
+                        <p>00:00 - 23:55</p>
+                    </div>
+                    <div class="flex items-center justify-between gap-10 bg-[#6DD35E] text-white rounded px-2">
+                        <p>Monday</p>
+                        <p>00:00 - 23:55</p>
+                    </div>
+                    <div class="flex items-center justify-between gap-10 bg-[#66B95A] text-white rounded px-2">
+                        <p>Monday</p>
+                        <p>00:00 - 23:55</p>
+                    </div>
+                    <div class="flex items-center justify-between gap-10 bg-[#6DD35E] text-white rounded px-2">
+                        <p>Monday</p>
+                        <p>00:00 - 23:55</p>
+                    </div>
+                </div>
+            </div>
+        </div>
 
         <!-- footer  -->
 
         <div class="bg-[#333333]">
-            <div class="container mx-auto pt-16 pb-8 border-b grid grid-cols-4">
+            <div class="container mx-auto px-5 pt-16 pb-8 border-b grid grid-cols-4">
                 <div class="space-y-3">
                     <p class="text-[#D8D8D8] text-sm">Classic Comfort Food with a Twist</p>
                     <h1 class="text-white text-[45px] leading-[37px] font-bold max-w-[250px]">Nawabi Restaurant</h1>
@@ -190,7 +284,7 @@
                 </div>
             </div>
 
-            <div class="container mx-auto py-10 flex justify-between items-center">
+            <div class="container mx-auto px-5 py-10 flex justify-between items-center">
                 <div class="flex items-center gap-x-3">
                     <img src="./assets/images/home/footer/cc-visa.png" alt="">
                     <img src="./assets/images/home/footer/cc-mastercard.png" alt="">
@@ -209,44 +303,7 @@
     <!-- Swiper JS -->
     <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
 
-    <!-- Initialize Swiper -->
-    <script>
-        var swiper = new Swiper(".mySwiper", {
-            slidesPerView: 3,
-            spaceBetween: 30,
-            freeMode: true,
-            pagination: {
-                el: ".swiper-pagination",
-                clickable: true,
-            },
-            autoplay: {
-                delay: 6000,
-                disableOnInteraction: false,
-            },
-            navigation: {
-                nextEl: ".custom-swiper-button-next",
-                prevEl: ".custom-swiper-button-prev",
-            },
-            breakpoints: {
-                360: {
-                    slidesPerView: 1.5,
-                    spaceBetween: 20,
-                },
-                540: {
-                    slidesPerView: 2,
-                    spaceBetween: 20,
-                },
-                1200: {
-                    slidesPerView: 4,
-                    spaceBetween: 40,
-                },
-                1024: {
-                    slidesPerView: 4,
-                    spaceBetween: 20,
-                },
-            },
-        });
-    </script>
+    <script src="./assets/js/main.js"></script>
 </body>
 
 </html>
