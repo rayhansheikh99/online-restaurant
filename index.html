@@ -7,9 +7,7 @@
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Caveat&display=swap" rel="stylesheet">
-    <link
-        href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;500;600;700&family=Oswald:wght@400;500;600;700&display=swap"
-        rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;500;600;700&family=Oswald:wght@400;500;600;700&display=swap" rel="stylesheet">
     <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" />
     <script src="https://polyfill.io/v3/polyfill.min.js?features=default"></script>
@@ -19,43 +17,55 @@
 </head>
 
 <body>
-    <main class="">
 
+    <header id="site-menu" class="relative bg-white">
         <!-- nav bar  -->
-        <nav class="container mx-auto px-5 flex justify-between items-center h-28">
+        <nav id="" class="flex justify-between items-center lg:container mx-auto px-5 h-28">
             <div>
                 <img src="./assets/images/home/logo.png" alt="">
             </div>
-            <div class="flex items-center font-medium gap-x-5 list-none">
+            <button id="menuBtn" class="hamburger block lg:hidden focus:outline-none" type="button"
+                onclick="navToggle();">
+                <span class="hamburger__top-bun"></span><span class="hamburger__bottom-bun"></span>
+            </button>
+            <div id="menu"
+                class="lg:flex hidden flex-col lg:flex-row lg:items-center font-medium gap-x-5 gap-y-3 list-none">
                 <li class="text-[#5EAE53]">Home</li>
                 <li>Online Order</li>
                 <li>Restaurant Info</li>
                 <li>Contact</li>
                 <li>Login</li>
                 <div
-                    class="flex items-center gap-x-2 bg-[#F1CDC5] text-[12px] rounded-md border border-[#EB8E78] py-2.5 px-5">
+                    class="flex items-center gap-x-2 bg-[#F1CDC5] text-[12px] rounded-md border border-[#EB8E78] py-2.5 px-5 w-max">
                     <img src="./assets/images/home/call.svg" alt="">
                     <p class="font-bold">Call Now 7443 6446</p>
                 </div>
             </div>
         </nav>
+    </header>
+
+    <main class="">
 
         <!-- hero section  -->
 
-        <div class="h-[750px] w-full bg-[#5EAE53] relative overflow-hidden">
+        <div class="lg:h-[750px] py-10 lg:py-0 w-full bg-[#5EAE53] relative overflow-hidden">
             <img src="./assets/images/home/pattern1.png" alt="pattern" class="absolute right-0 bottom-0 z-[1]">
             <img src="./assets/images/home/pattern (2).png" alt="pattern" class="absolute left-0 top-5 z-[0]">
-            <div class="container mx-auto px-5 grid grid-cols-2 items-center gap-5 relative z-[1] h-full w-full">
+            <div class="container mx-auto px-5 grid lg:grid-cols-2 items-center gap-5 relative z-[1] h-full w-full">
                 <div class="justify-self-start">
-                    <h2 class="max-w-[420px] text-[40px] text-[#F6B76C] font-caveat">Savor the Flavors of the World</h2>
-                    <h1 class="max-w-[600px] text-[56px] font-bold leading-[56px] text-white">Explore a Culinary Journey
+                    <h2 class="max-w-[420px] text-[25px] lg:text-[40px] text-[#F6B76C] font-caveat">Savor the Flavors of
+                        the World</h2>
+                    <h1 class="max-w-[600px] text-[45px] lg:text-[56px] font-bold leading-[48px] lg:leading-[56px] text-white">Explore a
+                        Culinary Journey
                         with Our Global Cuisine Selection</h1>
-                    <div class="mt-8 relative w-[426px]">
-                        <input type="text" placeholder="Find your favorite dish" class="w-[426px] rounded-xl h-11 px-5">
-                        <button class="btn-two h-10 absolute top-0.5 right-0.5">Search</button>
+                    <div class="mt-8 relative w-[302px] lg:w-[426px]">
+                        <input type="text" placeholder="Find your favorite dish"
+                            class="w-[302px] lg:w-[426px] rounded-xl h-8 lg:h-11 px-5 text-xs lg:text-base">
+                        <button
+                            class="btn-two h-7 lg:h-10 absolute top-0.5 right-0.5 text-xs lg:text-sm">Search</button>
                     </div>
                 </div>
-                <div class="justify-self-end -mr-10">
+                <div class="lg:justify-self-end lg:-mr-10">
                     <img src="./assets/images/home/hero1.png" alt="">
                 </div>
             </div>
@@ -66,14 +76,14 @@
 
         <section class="container mx-auto px-5">
             <h1 class="btn-one">Popular</h1>
-            <div class="flex justify-between mt-3 mb-8">
+            <div class="flex justify-between gap-x-5 mt-3 mb-8">
                 <div class="">
-                    <h1 class="text-[45px] mb-3 font-bold">Best Sell Items</h1>
+                    <h1 class="text-[30px] lg:text-[45px] mb-3 font-bold">Best Sell Items</h1>
                     <p class="text-gray-400">Nostalgic Favorites Reinvented for Modern Palates</p>
                 </div>
-                <div class="flex gap-4 items-center">
-                    <p>See All</p>
-                    <div class="flex gap-4 relative text-white">
+                <div class="flex gap-4 items-end lg:items-center w-max">
+                    <p class="underline lg:no-underline w-max">See All</p>
+                    <div class="lg:flex hidden gap-4 relative text-white">
                         <div
                             class="bg-[#EB8E78] h-11 w-11 rounded-full flex justify-center items-center custom-swiper-button-prev">
                             <span class="material-icons text-4xl">navigate_before</span>
@@ -162,25 +172,31 @@
         <!-- pickup delivery  -->
 
         <section class="relative">
-            <div class="container mx-auto px-5 grid grid-cols-2 items-center gap-5">
-                <img src="./assets/images/home/pattern3.png" alt="pattern" class="absolute right-0 top-5">
-                <img src="./assets/images/home/pattern4.png" alt="pattern" class="absolute left-0 bottom-5">
-                <div class="justify-self-start">
+            <div class="container mx-auto px-5 grid lg:grid-cols-2 items-center gap-x-5 gap-y-20">
+                <img src="./assets/images/home/pattern3.png" alt="pattern"
+                    class="absolute -right-3 lg:right-0 top-[85%] h-24 lg:h-auto lg:top-5">
+                <img src="./assets/images/home/pattern4.png" alt="pattern"
+                    class="absolute left-0 bottom-[37%] lg:bottom-5">
+                <div class="lg:justify-self-start">
                     <img src="./assets/images/home/pickup.png" alt="">
                 </div>
-                <div class="justify-self-end space-y-3">
-                    <p class="btn-one">ORDER ONLINE</p>
-                    <h1 class="text-[45px] leading-[50px] font-bold">Brunch Bonanza: <br />Quick and Easy</h1>
-                    <p class="text-gray-400">Encuentra las fondas cercanas por sí quieres hacer pick up directo en las
-                        tiendas.</p>
-                    <div class="w-full flex justify-between items-center gap-3 pt-5">
+                <div class="lg:justify-self-end space-y-3">
+                    <p class="btn-one relative">ORDER ONLINE</p>
+                    <h1 class="text-[30px] lg:text-[45px] leading-[40px] lg:leading-[50px] font-bold">Brunch Bonanza:
+                        <br />Quick and Easy
+                    </h1>
+                    <p class="text-gray-400">Encuentra las fondas cercanas por sí quieres hacer pick up directo en las tiendas.</p>
+                    <div class="w-full flex flex-col lg:flex-row justify-between lg:items-center gap-3 pt-5">
                         <div class="relative w-full h-[34px] ">
-                            <input type="text" placeholder="Zip code" class="border w-full h-[34px] rounded-[10px] px-5 text-sm">
+                            <input type="text" placeholder="Zip code"
+                                class="border w-full h-[34px] rounded-[10px] px-5 text-sm">
                             <span
                                 class="material-icons text-gray-400 text-sm absolute right-5 top-1/2 -translate-y-1/2">location_on</span>
                         </div>
-                        <p class="btn-two w-max">Pickup</p>
-                        <p class="btn-one w-max">Delivery</p>
+                        <div class="flex items-center gap-5">
+                            <p class="btn-two w-max">Pickup</p>
+                            <p class="btn-one w-max">Delivery</p>
+                        </div>
                     </div>
                 </div>
             </div>
@@ -191,7 +207,7 @@
         <section class="container mx-auto px-5">
             <div class="bg-[#F7F8F7] rounded-xl">
                 <div class="px-10 py-6 flex justify-between gap-16">
-                    <div class="w-max flex items-center gap-5 text-[#4A5E46] text-xl font-bold">
+                    <div class="w-max hidden lg:flex items-center gap-5 text-[#4A5E46] text-xl font-bold">
                         <span class="material-icons">location_on</span>
                         <p class="">Location</p>
                     </div>
@@ -199,7 +215,7 @@
                         class="w-full bg-transparent px-10 border-b border-gray-200">
                     <span class="material-icons text-gray-400 border rounded-md p-2">content_copy</span>
                 </div>
-                <div class="px-10 pb-10">
+                <div class="lg:px-10 px-5 pb-10">
                     <iframe class="rounded-xl" width="100%" height="400" frameborder="0" scrolling="no" marginheight="0"
                         marginwidth="0" id="gmap_canvas"
                         src="https://maps.google.com/maps?width=520&amp;height=400&amp;hl=en&amp;q=Copenhagen%20city%20mall%20Copenhagen+(Nawabi%20Restaurant)&amp;t=&amp;z=12&amp;ie=UTF8&amp;iwloc=B&amp;output=embed"></iframe>
@@ -213,8 +229,8 @@
             <div>
                 <img src="./assets/images/home/Oval.png" alt="pattern" class="absolute top-0 right-14">
             </div>
-            <div class="grid grid-cols-3 gap-5 container mx-auto px-5 items-center ">
-                <div class="space-y-3 justify-self-start">
+            <div class="grid lg:grid-cols-3 gap-x-5 gap-y-14 container mx-auto px-5 items-center ">
+                <div class="space-y-3 lg:justify-self-start">
                     <h1 class="text-[22px] text-white font-bold">Opening Hours</h1>
                     <div
                         class="flex items-center justify-between xl:gap-40 gap-20 bg-[#6DD35E] text-white rounded px-2">
@@ -252,10 +268,10 @@
                         <p>00:00 - 23:55</p>
                     </div>
                 </div>
-                <div class="justify-self-center">
+                <div class="justify-self-center order-last lg:-order-none">
                     <img src="./assets/images/home/time.png" alt="time" class="-mb-52">
                 </div>
-                <div class="space-y-3 justify-self-end">
+                <div class="space-y-3 lg:justify-self-end">
                     <h1 class="text-[22px] text-white font-bold">Delivery Time</h1>
                     <div
                         class="flex items-center justify-between xl:gap-40 gap-20 bg-[#6DD35E] text-white rounded px-2">
@@ -296,53 +312,58 @@
             </div>
         </section>
 
-        <!-- footer  -->
-
-        <footer class="bg-[#333333]">
-            <div class="container mx-auto px-5 pt-16 pb-8 border-b grid grid-cols-4 items-end">
-                <div class="space-y-3">
-                    <p class="text-[#D8D8D8] text-sm">Classic Comfort Food with a Twist</p>
-                    <h1 class="text-white text-[45px] leading-[42px] font-bold max-w-[250px]">Nawabi Restaurant</h1>
-                    <p class="text-[#D8D8D8] text-xs">Linde Alle 66400 Sønderborg Telephone: 7443 6446</p>
-                </div>
-                <div class="justify-self-end space-y-3">
-                    <img src="./assets/images/home/footer/payment.png" alt="">
-                    <img src="./assets/images/home/footer/kontrol.png" alt="">
-                </div>
-                <div class="justify-self-end space-y-3">
-                    <img src="./assets/images/home/footer/easy.png" alt="">
-                    <div class="flex items-center gap-x-3">
-                        <img src="./assets/images/home/footer/facebook.png" alt="">
-                        <img src="./assets/images/home/footer/twitter.png" alt="">
-                        <img src="./assets/images/home/footer/insta.png" alt="">
-                    </div>
-                </div>
-                <div class="justify-self-end space-y-3">
-                    <h1 class="text-white font-bold text-[22px]">Subscribe</h1>
-                    <div class="relative">
-                        <input type="text" placeholder="Email" class="w-full rounded-md h-11 px-5">
-                        <button class="absolute top-1/2 -translate-y-1/2 right-4">
-                            <img src="./assets/images/home/footer/Shape.png" alt="">
-                        </button>
-                    </div>
-                </div>
-            </div>
-
-            <div class="container mx-auto px-5 py-10 flex justify-between items-center">
-                <div class="flex items-center gap-x-3">
-                    <img src="./assets/images/home/footer/cc-visa.png" alt="">
-                    <img src="./assets/images/home/footer/cc-mastercard.png" alt="">
-                    <img src="./assets/images/home/footer/cc-apple-pay.png" alt="">
-                </div>
-                <div class="flex items-center gap-5">
-                    <p class="text-white">Terms & Conditions</p>
-                    <p class="text-white">Privacy</p>
-                    <p class="text-gray-400">© 2023 Nawabi Restaurant</p>
-                </div>
-            </div>
-        </footer>
-
     </main>
+
+    <!-- footer  -->
+
+    <footer class="bg-[#333333]">
+        <div
+            class="container mx-auto px-5 pt-16 pb-8 border-b grid grid-cols-2 lg:grid-cols-4 gap-x-5 gap-y-10 items-end">
+            <div class="space-y-3 col-span-2 lg:col-span-1">
+                <p class="text-[#D8D8D8] text-sm">Classic Comfort Food with a Twist</p>
+                <h1 class="text-white text-[45px] leading-[42px] font-bold max-w-[250px]">Nawabi Restaurant</h1>
+                <p class="text-[#D8D8D8] text-xs">Linde Alle 66400 Sønderborg Telephone: 7443 6446</p>
+            </div>
+            <div class="justify-self-end space-y-3">
+                <img src="./assets/images/home/footer/payment.png" alt="">
+                <img src="./assets/images/home/footer/kontrol.png" alt="">
+            </div>
+            <div class="justify-self-end space-y-3">
+                <img src="./assets/images/home/footer/easy.png" alt="">
+                <div class="flex items-center gap-x-3">
+                    <img src="./assets/images/home/footer/facebook.png" alt="">
+                    <img src="./assets/images/home/footer/twitter.png" alt="">
+                    <img src="./assets/images/home/footer/insta.png" alt="">
+                </div>
+            </div>
+            <div class="lg:justify-self-end space-y-3 col-span-2 lg:col-span-1">
+                <h1 class="text-white font-bold text-[22px]">Subscribe</h1>
+                <div class="relative">
+                    <input type="text" placeholder="Email" class="w-full rounded-md h-11 px-5">
+                    <button class="absolute top-1/2 -translate-y-1/2 right-4">
+                        <img src="./assets/images/home/footer/Shape.png" alt="">
+                    </button>
+                </div>
+            </div>
+        </div>
+
+        <div class="container mx-auto px-5 py-10 grid grid-cols-2 gap-x-5 gap-y-5 lg:flex justify-between items-center">
+            <div class="flex items-center gap-x-3">
+                <img src="./assets/images/home/footer/cc-visa.png" alt="">
+                <img src="./assets/images/home/footer/cc-mastercard.png" alt="">
+                <img src="./assets/images/home/footer/cc-apple-pay.png" alt="">
+            </div>
+            <div class="flex items-center justify-self-end gap-3 text-[12px] lg:text-base text-white">
+                <p class="">Terms & Conditions</p>
+                <p class="">Privacy</p>
+            </div>
+            <div class="col-span-2 justify-self-center">
+                <p class="text-gray-400 text-[12px] lg:text-base">© 2023 Nawabi Restaurant</p>
+            </div>
+        </div>
+    </footer>
+
+
 
     <!-- Swiper JS -->
     <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
