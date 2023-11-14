@@ -7,16 +7,19 @@
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Caveat&display=swap" rel="stylesheet">
-    <link href="https://fonts.googleapis.com/css2?family=DM+Sans:opsz@9..40&display=swap" rel="stylesheet">
+    <link
+        href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;500;600;700&family=Oswald:wght@400;500;600;700&display=swap"
+        rel="stylesheet">
     <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" />
+    <script src="https://polyfill.io/v3/polyfill.min.js?features=default"></script>
     <link rel="stylesheet" href="./assets/css/styles.css">
     <script src="https://cdn.tailwindcss.com"></script>
     <title>Restaurant</title>
 </head>
 
 <body>
-    <section class="">
+    <main class="">
 
         <!-- nav bar  -->
         <nav class="container mx-auto px-5 flex justify-between items-center h-28">
@@ -44,7 +47,7 @@
             <img src="./assets/images/home/pattern (2).png" alt="pattern" class="absolute left-0 top-5 z-[0]">
             <div class="container mx-auto px-5 grid grid-cols-2 items-center gap-5 relative z-[1] h-full w-full">
                 <div class="justify-self-start">
-                    <h1 class="max-w-[420px] text-[40px] text-[#F6B76C] font-caveat">Savor the Flavors of the World</h1>
+                    <h2 class="max-w-[420px] text-[40px] text-[#F6B76C] font-caveat">Savor the Flavors of the World</h2>
                     <h1 class="max-w-[600px] text-[56px] font-bold leading-[56px] text-white">Explore a Culinary Journey
                         with Our Global Cuisine Selection</h1>
                     <div class="mt-8 relative w-[426px]">
@@ -61,11 +64,11 @@
 
         <!-- best sell items  -->
 
-        <div class="container mx-auto px-5 py-16">
+        <section class="container mx-auto px-5">
             <h1 class="btn-one">Popular</h1>
             <div class="flex justify-between mt-3 mb-8">
                 <div class="">
-                    <h1 class="text-[45px] mb-3">Best Sell Items</h1>
+                    <h1 class="text-[45px] mb-3 font-bold">Best Sell Items</h1>
                     <p class="text-gray-400">Nostalgic Favorites Reinvented for Modern Palates</p>
                 </div>
                 <div class="flex gap-4 items-center">
@@ -154,63 +157,102 @@
                     </div>
                 </div>
             </div>
-        </div>
+        </section>
 
         <!-- pickup delivery  -->
 
-        <div class="container mx-auto px-5 grid grid-cols-2 items-center gap-5 relative">
-            <img src="./assets/images/home/pattern3.png" alt="pattern" class="absolute right-0 top-5">
-            <div class="justify-self-start">
-                <img src="./assets/images/home/pickup.png" alt="">
-            </div>
-            <div class="justify-self-end space-y-3">
-                <p class="btn-one">ORDER ONLINE</p>
-                <h1 class="text-[45px] leading-[50px] font-bold">Brunch Bonanza: <br />Quick and Easy</h1>
-                <p class="text-gray-400">Encuentra las fondas cercanas por sí quieres hacer pick up directo en las
-                    tiendas.</p>
-                <div class="w-full flex justify-between items-center gap-3 pt-5">
-                    <div class="relative w-full h-9 ">
-                        <input type="text" placeholder="Zip code" class="border w-full h-9 rounded-[10px] px-5">
-                        <span
-                            class="material-icons text-gray-400 absolute right-5 top-1/2 -translate-y-1/2">location_on</span>
+        <section class="relative">
+            <div class="container mx-auto px-5 grid grid-cols-2 items-center gap-5">
+                <img src="./assets/images/home/pattern3.png" alt="pattern" class="absolute right-0 top-5">
+                <img src="./assets/images/home/pattern4.png" alt="pattern" class="absolute left-0 bottom-5">
+                <div class="justify-self-start">
+                    <img src="./assets/images/home/pickup.png" alt="">
+                </div>
+                <div class="justify-self-end space-y-3">
+                    <p class="btn-one">ORDER ONLINE</p>
+                    <h1 class="text-[45px] leading-[50px] font-bold">Brunch Bonanza: <br />Quick and Easy</h1>
+                    <p class="text-gray-400">Encuentra las fondas cercanas por sí quieres hacer pick up directo en las
+                        tiendas.</p>
+                    <div class="w-full flex justify-between items-center gap-3 pt-5">
+                        <div class="relative w-full h-[34px] ">
+                            <input type="text" placeholder="Zip code" class="border w-full h-[34px] rounded-[10px] px-5 text-sm">
+                            <span
+                                class="material-icons text-gray-400 text-sm absolute right-5 top-1/2 -translate-y-1/2">location_on</span>
+                        </div>
+                        <p class="btn-two w-max">Pickup</p>
+                        <p class="btn-one w-max">Delivery</p>
                     </div>
-                    <p class="btn-two w-max">Pickup</p>
-                    <p class="btn-one w-max">Delivery</p>
                 </div>
             </div>
-        </div>
+        </section>
+
+
+
+        <!-- map  -->
+
+
+        <section class="container mx-auto px-5 bg-[#F7F8F7] rounded-xl">
+            <div class="px-10 py-6 flex justify-between gap-16">
+                <div class="w-max flex items-center gap-5 text-[#4A5E46] text-xl font-bold">
+                    <span class="material-icons">location_on</span>
+                    <p class="">Location</p>
+                </div>
+                <input type="text" placeholder="Linde Alle 66400 Sønderborg"
+                    class="w-full bg-transparent px-10 border-b border-gray-200">
+                <span class="material-icons text-gray-400 border rounded-md p-2">content_copy</span>
+            </div>
+            <div class="px-10 pb-10">
+                <iframe class="rounded-xl" width="100%" height="400" frameborder="0" scrolling="no" marginheight="0"
+                    marginwidth="0" id="gmap_canvas"
+                    src="https://maps.google.com/maps?width=520&amp;height=400&amp;hl=en&amp;q=Copenhagen%20city%20mall%20Copenhagen+(Nawabi%20Restaurant)&amp;t=&amp;z=12&amp;ie=UTF8&amp;iwloc=B&amp;output=embed"></iframe>
+            </div>
+        </section>
+
+
+
+
 
         <!-- timetable  -->
 
-        <div class="bg-[#5EAE53] py-10 overflow-hidden">
+        <section class="bg-[#5EAE53] py-10 overflow-hidden relative">
+            <div>
+                <img src="./assets/images/home/Oval.png" alt="pattern" class="absolute top-0 right-14">
+            </div>
             <div class="grid grid-cols-3 gap-5 container mx-auto px-5 items-center ">
                 <div class="space-y-3 justify-self-start">
-                    <h3 class="text-lg text-white font-bold">Opening Hours</h3>
-                    <div class="flex items-center justify-between gap-10 bg-[#6DD35E] text-white rounded px-2">
+                    <h1 class="text-[22px] text-white font-bold">Opening Hours</h1>
+                    <div
+                        class="flex items-center justify-between xl:gap-40 gap-20 bg-[#6DD35E] text-white rounded px-2">
                         <p>Monday</p>
                         <p>00:00 - 23:55</p>
                     </div>
-                    <div class="flex items-center justify-between gap-10 bg-[#66B95A] text-white rounded px-2">
+                    <div
+                        class="flex items-center justify-between xl:gap-40 gap-20 bg-[#66B95A] text-white rounded px-2">
                         <p>Monday</p>
                         <p>00:00 - 23:55</p>
                     </div>
-                    <div class="flex items-center justify-between gap-10 bg-[#6DD35E] text-white rounded px-2">
+                    <div
+                        class="flex items-center justify-between xl:gap-40 gap-20 bg-[#6DD35E] text-white rounded px-2">
                         <p>Monday</p>
                         <p>00:00 - 23:55</p>
                     </div>
-                    <div class="flex items-center justify-between gap-10 bg-[#66B95A] text-white rounded px-2">
+                    <div
+                        class="flex items-center justify-between xl:gap-40 gap-20 bg-[#66B95A] text-white rounded px-2">
                         <p>Monday</p>
                         <p>00:00 - 23:55</p>
                     </div>
-                    <div class="flex items-center justify-between gap-10 bg-[#6DD35E] text-white rounded px-2">
+                    <div
+                        class="flex items-center justify-between xl:gap-40 gap-20 bg-[#6DD35E] text-white rounded px-2">
                         <p>Monday</p>
                         <p>00:00 - 23:55</p>
                     </div>
-                    <div class="flex items-center justify-between gap-10 bg-[#66B95A] text-white rounded px-2">
+                    <div
+                        class="flex items-center justify-between xl:gap-40 gap-20 bg-[#66B95A] text-white rounded px-2">
                         <p>Monday</p>
                         <p>00:00 - 23:55</p>
                     </div>
-                    <div class="flex items-center justify-between gap-10 bg-[#6DD35E] text-white rounded px-2">
+                    <div
+                        class="flex items-center justify-between xl:gap-40 gap-20 bg-[#6DD35E] text-white rounded px-2">
                         <p>Monday</p>
                         <p>00:00 - 23:55</p>
                     </div>
@@ -219,53 +261,60 @@
                     <img src="./assets/images/home/time.png" alt="time" class="-mb-52">
                 </div>
                 <div class="space-y-3 justify-self-end">
-                    <h3 class="text-lg text-white font-bold">Delivery Time</h3>
-                    <div class="flex items-center justify-between gap-10 bg-[#6DD35E] text-white rounded px-2">
+                    <h1 class="text-[22px] text-white font-bold">Delivery Time</h1>
+                    <div
+                        class="flex items-center justify-between xl:gap-40 gap-20 bg-[#6DD35E] text-white rounded px-2">
                         <p>Monday</p>
                         <p>00:00 - 23:55</p>
                     </div>
-                    <div class="flex items-center justify-between gap-10 bg-[#66B95A] text-white rounded px-2">
+                    <div
+                        class="flex items-center justify-between xl:gap-40 gap-20 bg-[#66B95A] text-white rounded px-2">
                         <p>Monday</p>
                         <p>00:00 - 23:55</p>
                     </div>
-                    <div class="flex items-center justify-between gap-10 bg-[#6DD35E] text-white rounded px-2">
+                    <div
+                        class="flex items-center justify-between xl:gap-40 gap-20 bg-[#6DD35E] text-white rounded px-2">
                         <p>Monday</p>
                         <p>00:00 - 23:55</p>
                     </div>
-                    <div class="flex items-center justify-between gap-10 bg-[#66B95A] text-white rounded px-2">
+                    <div
+                        class="flex items-center justify-between xl:gap-40 gap-20 bg-[#66B95A] text-white rounded px-2">
                         <p>Monday</p>
                         <p>00:00 - 23:55</p>
                     </div>
-                    <div class="flex items-center justify-between gap-10 bg-[#6DD35E] text-white rounded px-2">
+                    <div
+                        class="flex items-center justify-between xl:gap-40 gap-20 bg-[#6DD35E] text-white rounded px-2">
                         <p>Monday</p>
                         <p>00:00 - 23:55</p>
                     </div>
-                    <div class="flex items-center justify-between gap-10 bg-[#66B95A] text-white rounded px-2">
+                    <div
+                        class="flex items-center justify-between xl:gap-40 gap-20 bg-[#66B95A] text-white rounded px-2">
                         <p>Monday</p>
                         <p>00:00 - 23:55</p>
                     </div>
-                    <div class="flex items-center justify-between gap-10 bg-[#6DD35E] text-white rounded px-2">
+                    <div
+                        class="flex items-center justify-between xl:gap-40 gap-20 bg-[#6DD35E] text-white rounded px-2">
                         <p>Monday</p>
                         <p>00:00 - 23:55</p>
                     </div>
                 </div>
             </div>
-        </div>
+        </section>
 
         <!-- footer  -->
 
-        <div class="bg-[#333333]">
-            <div class="container mx-auto px-5 pt-16 pb-8 border-b grid grid-cols-4">
+        <footer class="bg-[#333333]">
+            <div class="container mx-auto px-5 pt-16 pb-8 border-b grid grid-cols-4 items-end">
                 <div class="space-y-3">
                     <p class="text-[#D8D8D8] text-sm">Classic Comfort Food with a Twist</p>
-                    <h1 class="text-white text-[45px] leading-[37px] font-bold max-w-[250px]">Nawabi Restaurant</h1>
+                    <h1 class="text-white text-[45px] leading-[42px] font-bold max-w-[250px]">Nawabi Restaurant</h1>
                     <p class="text-[#D8D8D8] text-xs">Linde Alle 66400 Sønderborg Telephone: 7443 6446</p>
                 </div>
-                <div>
+                <div class="justify-self-end space-y-3">
                     <img src="./assets/images/home/footer/payment.png" alt="">
                     <img src="./assets/images/home/footer/kontrol.png" alt="">
                 </div>
-                <div>
+                <div class="justify-self-end space-y-3">
                     <img src="./assets/images/home/footer/easy.png" alt="">
                     <div class="flex items-center gap-x-3">
                         <img src="./assets/images/home/footer/facebook.png" alt="">
@@ -273,8 +322,8 @@
                         <img src="./assets/images/home/footer/insta.png" alt="">
                     </div>
                 </div>
-                <div>
-                    <h1 class="text-white font-bold mb-4 text-[22px]">Subscribe</h1>
+                <div class="justify-self-end space-y-3">
+                    <h1 class="text-white font-bold text-[22px]">Subscribe</h1>
                     <div class="relative">
                         <input type="text" placeholder="Email" class="w-full rounded-md h-11 px-5">
                         <button class="absolute top-1/2 -translate-y-1/2 right-4">
@@ -296,9 +345,9 @@
                     <p class="text-gray-400">© 2023 Nawabi Restaurant</p>
                 </div>
             </div>
-        </div>
+        </footer>
 
-    </section>
+    </main>
 
     <!-- Swiper JS -->
     <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>

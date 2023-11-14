@@ -35,7 +35,14 @@ html {
 }
 
 body {
-    font-family: 'DM Sans', sans-serif;
+    font-family: 'Open Sans', sans-serif;
+}
+h1 {
+    font-family: 'Oswald', sans-serif;
+}
+
+section {
+    margin-top: 90px;
 }
 
 .btn-one {
@@ -80,3 +87,10 @@ body {
 .font-caveat {
     font-family: 'Caveat', cursive;
 }
+
+#map {
+    height: 400px;
+    width: 100%;
+  }
+
+  
