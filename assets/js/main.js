@@ -31,12 +31,29 @@ var swiper = new Swiper(".mySwiper", {
 });
 
 
+var swiper = new Swiper(".onlineSwiper", {
+    autoplay: {
+        delay: 3000,
+    },
+    pagination: {
+        el: ".swiper-pagination",
+      },
+    slidesPerView: 1,
+    loop: true,
+    speed: 1000,
+    navigation: {
+        nextEl: ".custom-swiper-button-next",
+        prevEl: ".custom-swiper-button-prev",
+    },
+});
+
+
 // navbar 
 
 var nav = document.getElementById('site-menu');
 
 window.addEventListener('scroll', function () {
-    if (window.scrollY >= 400) { // adjust this value based on site structure and header image height
+    if (window.scrollY >= 400 && window.innerWidth > 1024) {
         nav.classList.add('nav-sticky');
     } else {
         nav.classList.remove('nav-sticky');
@@ -54,4 +71,13 @@ function navToggle() {
     nav.classList.toggle('hidden');
 }
 
+// online order 
+
+function menuToggle() {
+    var btn = document.getElementById('menuOnline');
+    btn.classList.toggle('flex');
+    btn.classList.toggle('hidden');
+    btn.classList.add('menu-order');
+    // btn.classList.toggle('-left-[200px]');
+}
 
