@@ -88,15 +88,11 @@ section {
     font-family: 'Caveat', cursive;
 }
 
-/* #gmap_canvas {
-    height: 250px;
-    width: 100%;
-  } */
-
 /* Navbar  */
   .nav-sticky {
     position: fixed !important;
     min-width: 100%;
+    margin: 0 auto;
     top: 0px;
     box-shadow: 0 2px 4px 0 rgba(0, 0, 0, .1);
     z-index: 100;
@@ -117,7 +113,6 @@ section {
     position: absolute;
     width: 24px;
     height: 2px;
-    /* right: 10px; */
     background: #000;
     transform: rotate(0);
     transition: all 0.5s;

@@ -2,8 +2,8 @@ var swiper = new Swiper(".mySwiper", {
     freeMode: true,
     autoplay: {
         delay: 3000,
-        disableOnInteraction: false,
     },
+    loop: true,
     speed: 1000,
     navigation: {
         nextEl: ".custom-swiper-button-next",
