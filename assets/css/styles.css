@@ -88,17 +88,17 @@ section {
     font-family: 'Caveat', cursive;
 }
 
-#map {
-    height: 400px;
+/* #gmap_canvas {
+    height: 250px;
     width: 100%;
-  }
+  } */
 
-
+/* Navbar  */
   .nav-sticky {
-    position: fixed;
+    position: fixed !important;
     min-width: 100%;
     margin: 0 auto;
-    top: 0;
+    top: -1px;
     box-shadow: 0 2px 4px 0 rgba(0, 0, 0, .1);
     z-index: 100;
     background-color: white;
@@ -123,10 +123,6 @@ section {
     transition: all 0.5s;
   }
   
-  /* .hamburger:hover [class*="-bun"] {
-    background: #333;
-  } */
-  
   .hamburger__top-bun {
     transform: translateY(-5px);
   }
@@ -139,13 +135,12 @@ section {
     transform: rotate(90deg);
     transform: translateY(-1px);
   }
-  /* top-[100%] pb-10 lg:pb-0 px-5 lg:px-0 bg-white left-0 right-0 z-10 */
   .close {
     position: absolute;
-    top: 100%;
+    top: 99%;
     left: 0;
     width: 100%;
-    padding: 0 20px 20px;
+    padding: 5px 20px 20px;
     background: white;
     z-index: 10;
   }

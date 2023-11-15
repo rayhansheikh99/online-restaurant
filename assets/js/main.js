@@ -1,6 +1,5 @@
 var swiper = new Swiper(".mySwiper", {
     freeMode: true,
-    centeredSlides: true,
     autoplay: {
         delay: 3000,
         disableOnInteraction: false,
@@ -11,20 +10,22 @@ var swiper = new Swiper(".mySwiper", {
         prevEl: ".custom-swiper-button-prev",
     },
     breakpoints: {
-        360: {
+        300: {
             slidesPerView: 2,
             spaceBetween: 20,
+            centeredSlides: true,
         },
         540: {
             slidesPerView: 2,
             spaceBetween: 20,
         },
-        1200: {
+        1024: {
             slidesPerView: 4,
             spaceBetween: 40,
         },
-        1024: {
+        1200: {
             slidesPerView: 4,
+            centeredSlides: false,
             spaceBetween: 20,
         },
     },
@@ -34,15 +35,12 @@ var swiper = new Swiper(".mySwiper", {
 // navbar 
 
 var nav = document.getElementById('site-menu');
-var header = document.getElementById('top');
 
 window.addEventListener('scroll', function () {
     if (window.scrollY >= 400) { // adjust this value based on site structure and header image height
         nav.classList.add('nav-sticky');
-        header.classList.add('pt-scroll');
     } else {
         nav.classList.remove('nav-sticky');
-        header.classList.remove('pt-scroll');
     }
 });
 
