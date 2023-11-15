@@ -107,7 +107,7 @@ section {
 
   .hamburger {
     cursor: pointer;
-    width: 24px;
+    width: 48px;
     height: 48px;
     transition: all 0.25s;
   }
