@@ -1,5 +1,4 @@
 var swiper = new Swiper(".mySwiper", {
-    freeMode: true,
     autoplay: {
         delay: 3000,
     },
