@@ -1,6 +1,8 @@
+// product slider 
+
 var swiper = new Swiper(".mySwiper", {
     autoplay: {
-        delay: 3000,
+        delay: 20000,
     },
     loop: true,
     speed: 1000,
@@ -10,7 +12,7 @@ var swiper = new Swiper(".mySwiper", {
     },
     breakpoints: {
         300: {
-            slidesPerView: 2,
+            slidesPerView: 1.5,
             spaceBetween: 10,
             centeredSlides: true,
         },
@@ -30,6 +32,7 @@ var swiper = new Swiper(".mySwiper", {
     },
 });
 
+// online order slider 
 
 var swiper = new Swiper(".onlineSwiper", {
     autoplay: {
@@ -60,7 +63,6 @@ window.addEventListener('scroll', function () {
     }
 });
 
-
 function navToggle() {
     var btn = document.getElementById('menuBtn');
     var nav = document.getElementById('menu');
@@ -71,13 +73,11 @@ function navToggle() {
     nav.classList.toggle('hidden');
 }
 
-// online order 
+// online order menu
 
 function menuToggle() {
     var btn = document.getElementById('menuOnline');
-    btn.classList.toggle('flex');
-    btn.classList.toggle('hidden');
-    btn.classList.add('menu-order');
-    // btn.classList.toggle('-left-[200px]');
+    btn.classList.toggle('menu-order');
+    btn.classList.toggle('menu-order-close');
 }
 

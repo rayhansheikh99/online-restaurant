@@ -6,28 +6,35 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Caveat&display=swap" rel="stylesheet">
+    <!-- google font and icons  -->
     <link
         href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;500;600;700&family=Oswald:wght@400;500;600;700&display=swap"
         rel="stylesheet">
     <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
     <link rel="stylesheet"
         href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@24,400,0,0" />
+    <!-- font awesome icons  -->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css" />
+    <!-- favicon  -->
+    <link rel="icon" type="image/x-icon" href="./assets/images/favicon.png">
+    <!-- swiper js for slider  -->
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" />
     <script src="https://polyfill.io/v3/polyfill.min.js?features=default"></script>
+    <!-- css file  -->
     <link rel="stylesheet" href="./assets/css/styles.css">
     <script src="https://cdn.tailwindcss.com"></script>
+    <!-- title  -->
     <title>Online Order</title>
 </head>
 
 <body>
 
+    <!-- header  -->
     <header id="site-menu" class="fixed top-0 left-0 w-full z-10 lg:relative bg-white">
         <!-- nav bar  -->
         <nav id="" class="flex justify-between items-center lg:container lg:mx-auto px-5 h-28">
             <div>
-                <img src="./assets/images/home/logo.png" alt="">
+                <a href="/"><img src="./assets/images/home/logo.png" alt=""></a>
             </div>
             <button id="menuBtn" class="hamburger block lg:hidden focus:outline-none" type="button"
                 onclick="navToggle();">
@@ -49,24 +56,28 @@
         </nav>
     </header>
 
+    <!-- main section  -->
     <main>
         <div class="flex h-full lg:container lg:mx-auto lg:px-5 lg:pb-[90px] lg:pt-8 mt-28 lg:mt-0">
+            <div><img src="/assets/images/home/pattern4.png" alt="pattern" class="absolute top-1/2 left-0"></div>
             <div id="menuOnline"
-                class="w-[200px] lg:w-[250px] lg:flex hidden flex-col gap-y-3 space-y-3 fixed -left-[200px] lg:left-[0px] duration-500 top-28 lg:top-0 px-5 bottom-0 z-[3] bg-white lg:relative">
+                class="w-[200px] lg:w-[250px] lg:flex flex menu-order-close flex-col gap-y-3 space-y-3 fixed -left-[200px] lg:left-[0px] duration-500 top-28 lg:top-0 px-5 bottom-0 z-[3] bg-white lg:relative">
                 <div class="flex justify-between items-center gap-1">
                     <h2 class="text-[22px] font-bold">Menu</h2>
                     <span onclick="menuToggle();" class="material-symbols-outlined lg:hidden">
                         arrow_downward
                     </span>
                 </div>
-                <p>Burger</p>
-                <p>Pizza</p>
-                <p>Burger</p>
-                <p>Pizza</p>
-                <p>Burger</p>
-                <p>Pizza</p>
-                <p>Burger</p>
-                <p>Pizza</p>
+                <div class="space-y-2">
+                    <p>Pizza</p>
+                    <p>Burger</p>
+                    <p>Grill</p>
+                    <p>Menus</p>
+                    <p>Sandwich</p>
+                    <p>Indian</p>
+                    <p>Combo</p>
+                    <p>Beverage</p>
+                </div>
                 <div
                     class="absolute bg-[#5EAE53] py-2 px-4 lg:bottom-0 bottom-5 flex items-center text-white gap-3 rounded">
                     <p class="">Order</p>
@@ -114,7 +125,9 @@
             class="lg:container lg:mx-auto px-5 pt-16 pb-8 border-b grid grid-cols-2 lg:grid-cols-4 gap-x-5 gap-y-10 items-end">
             <div class="space-y-3 col-span-2 lg:col-span-1">
                 <p class="text-[#D8D8D8] text-sm">Classic Comfort Food with a Twist</p>
-                <h1 class="text-white text-[45px] leading-[42px] font-bold max-w-[250px]">Nawabi Restaurant</h1>
+                <a href="/">
+                    <h1 class="text-white text-[45px] leading-[42px] font-bold max-w-[250px]">Nawabi Restaurant</h1>
+                </a>
                 <p class="text-[#D8D8D8] text-xs">Linde Alle 66400 Sønderborg Telephone: 7443 6446</p>
             </div>
             <div class="justify-self-end space-y-3">
