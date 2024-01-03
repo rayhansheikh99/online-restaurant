@@ -1,3 +1,21 @@
+// hero section slider 
+
+var swiper = new Swiper(".onlineSwiperHero", {
+    autoplay: {
+        delay: 3000,
+    },
+    pagination: {
+        el: ".swiper-pagination",
+      },
+    slidesPerView: 1,
+    loop: true,
+    speed: 1000,
+    navigation: {
+        nextEl: ".custom-swiper-hero-next",
+        prevEl: ".custom-swiper-hero-prev",
+    },
+});
+
 // product slider 
 
 var swiper = new Swiper(".mySwiper", {
@@ -53,15 +71,15 @@ var swiper = new Swiper(".onlineSwiper", {
 
 // navbar 
 
-var nav = document.getElementById('site-menu');
+// var nav = document.getElementById('site-menu');
 
-window.addEventListener('scroll', function () {
-    if (window.scrollY >= 400 && window.innerWidth > 1024) {
-        nav.classList.add('nav-sticky');
-    } else {
-        nav.classList.remove('nav-sticky');
-    }
-});
+// window.addEventListener('scroll', function () {
+//     if (window.scrollY >= 400 && window.innerWidth > 1024) {
+//         nav.classList.add('nav-sticky');
+//     } else {
+//         nav.classList.remove('nav-sticky');
+//     }
+// });
 
 function navToggle() {
     var btn = document.getElementById('menuBtn');
