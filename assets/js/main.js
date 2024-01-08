@@ -49,6 +49,24 @@ var swiper = new Swiper(".mySwiper", {
         },
     },
 });
+// testimonial slider 
+
+var swiper = new Swiper(".review", {
+    autoplay: {
+        delay: 2000,
+    },
+    pagination: {
+        el: ".swiper-pagination",
+        type: "fraction",
+      },
+    slidesPerView: 1,
+    loop: true,
+    speed: 1000,
+    navigation: {
+        nextEl: ".custom-swiper-review-next",
+        prevEl: ".custom-swiper-review-prev",
+    },
+});
 
 // online order slider 
 
