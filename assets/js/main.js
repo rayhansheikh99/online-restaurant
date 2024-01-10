@@ -53,10 +53,10 @@ var swiper = new Swiper(".mySwiper", {
 
 var swiper = new Swiper(".review", {
     autoplay: {
-        delay: 2000,
+        delay: 10000,
     },
     pagination: {
-        el: ".swiper-pagination",
+        el: ".swiper-pagination-review",
         type: "fraction",
       },
     slidesPerView: 1,

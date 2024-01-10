@@ -315,10 +315,10 @@
 
         <!-- testimonial  -->
         <section class="lg:container relative lg:mx-auto px-5">
-            <div class="grid lg:grid-cols-2 items-center gap-x-5 gap-y-20 bg-[#E6F2E4] rounded-[10px] py-20">
+            <div class="grid grid-cols-1 lg:grid-cols-2 items-center gap-x-5 gap-y-10 bg-[#E6F2E4] rounded-[10px] py-20 px-5">
                 <img src="./assets/images/home/testipattern.png" alt="pattern"
                     class="absolute left-1/2 -translate-x-1/2 top-0 h-24 lg:h-auto" />
-                <div class="lg:justify-self-center w-[416px]">
+                <div class="lg:justify-self-center lg:w-[416px]">
                     <h1 class="btn-one">TESTIMONIAL</h1>
                     <div class="flex justify-between gap-x-5 mt-3 mb-8">
                         <div class="">
@@ -332,10 +332,10 @@
                     </div>
                 </div>
 
-                <div class="swiper review w-[416px]">
+                <div class="swiper review lg:w-[416px] w-full relative">
                     <div class="swiper-wrapper">
-                        <!-- hero Image 1 -->
-                        <div class="swiper-slide relative">
+                        <!-- testimonial 1 -->
+                        <div class="swiper-slide relative ">
                             <p>Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an
                                 unknown printer took a galley of type and scrambled it to make a type specimen book</p>
                             <div class="flex items-center gap-3 mt-5">
@@ -347,7 +347,7 @@
                                 </div>
                             </div>
                         </div>
-                        <!-- hero Image 1 -->
+                        <!-- testimonial 2 -->
                         <div class="swiper-slide relative">
                             <p>Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an
                                 unknown printer took a galley of type and scrambled it to make a type specimen book</p>
@@ -361,17 +361,19 @@
                             </div>
                         </div>
                     </div>
-                    <div class="float-end relative">
-                        <div class="lg:flex items-center hidden gap-x-2 text-white">
-                            <div
-                                class="custom-swiper-review-prev z-10 lg:cursor-pointer">
+                    <div class="absolute right-0 -bottom-0.5 flex items-center">
+                        <div class="flex items-center">
+                            <div class="custom-swiper-review-prev z-10 lg:cursor-pointer">
                                 <span class="material-icons text-[#A0CB9A]">navigate_before</span>
                             </div>
-                            <div class="swiper-pagination text-[#A0CB9A] w-max"></div>
-                            <div
-                                class="custom-swiper-review-next z-10">
+                            <div class="custom-swiper-review-next z-10 ml-5 h-max">
                                 <span class="material-icons text-[#5EAE53] text-5xl">navigate_next</span>
                             </div>
+                        </div>
+                    </div>
+
+                    <div class="absolute bottom-4 right-9">
+                        <div class="swiper-pagination-review text-[#A0CB9A]">
                         </div>
                     </div>
                 </div>
