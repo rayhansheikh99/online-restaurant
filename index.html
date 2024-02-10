@@ -1,0 +1,570 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <!-- google font and icons  -->
+    <link
+        href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;500;600;700&family=Oswald:wght@400;500;600;700&display=swap"
+        rel="stylesheet" />
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet" />
+    <link rel="stylesheet"
+        href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@24,400,0,0" />
+    <!-- font awesome icons  -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css" />
+    <!-- favicon  -->
+    <link rel="icon" type="image/x-icon" href="./assets/images/favicon.png" />
+    <!-- swiper js for slider  -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" />
+    <script src="https://polyfill.io/v3/polyfill.min.js?features=default"></script>
+    <!-- css file  -->
+    <link rel="stylesheet" href="./assets/css/styles.css" />
+    <script src="https://cdn.tailwindcss.com"></script>
+    <!-- title  -->
+    <title>Restaurant</title>
+</head>
+
+<body>
+    <!-- header section start -->
+    <header id="site-menu" class="relative bg-white">
+        <!-- nav bar  -->
+        <nav id="" class="flex justify-between items-center lg:container lg:mx-auto px-5 h-28 lg:h-[150px]">
+            <div>
+                <a href="/"><img src="./assets/images/home/logo.png" alt="" /></a>
+            </div>
+            <button id="menuBtn" class="hamburger block lg:hidden focus:outline-none" type="button"
+                onclick="navToggle();">
+                <span class="hamburger__top-bun"></span><span class="hamburger__bottom-bun"></span>
+            </button>
+            <div id="menu"
+                class="lg:flex hidden flex-col lg:flex-row lg:items-center font-medium gap-x-5 gap-y-3 list-none">
+                <li class="text-[#5EAE53]"><a href="/">Home</a></li>
+                <li><a href="/online-order.html">Online Order</a></li>
+                <li>Restaurant Info</li>
+                <li>Contact</li>
+                <li>Login</li>
+                <div
+                    class="flex items-center gap-x-2 bg-[#F1CDC5] text-[12px] rounded-md border border-[#EB8E78] py-2.5 px-5 w-max">
+                    <img src="./assets/images/home/call.svg" alt="" />
+                    <p class="font-bold">Call Now 7443 6446</p>
+                </div>
+            </div>
+        </nav>
+    </header>
+    <!-- header section end -->
+
+    <!-- main section start -->
+    <main class="">
+        <!-- hero section  -->
+        <div class="swiper onlineSwiperHero rounded">
+            <div class="swiper-wrapper">
+                <!-- hero Image 1 -->
+                <div class="swiper-slide relative lg:rounded overflow-hidden">
+                    <img src="./assets/images/home/hero/hero1.png" alt="product" class="h-auto min-w-full" />
+                    <div class="absolute left-0 top-0 z-[10] h-full w-full">
+                        <div class="lg:container lg:mx-auto px-5 h-full">
+                            <div class="w-max h-full flex flex-col justify-center">
+                                <h2 class="max-w-[600px] text-[16px] lg:text-[40px] text-[#F6B76C] font-caveat">
+                                    Savor the Flavors of the World
+                                </h2>
+                                <h1
+                                    class="lg:max-w-[600px] max-w-[280px] text-[24px] lg:text-[56px] font-bold leading-[30px] lg:leading-[56px] text-white">
+                                    Explore a Culinary Journey with Our Global Cuisine Selection
+                                </h1>
+                                <div class="mt-2 lg:mt-8 relative w-[280px] lg:w-[426px]">
+                                    <input type="text" placeholder="Find your favorite dish"
+                                        class="w-[280px] lg:w-[426px] rounded-xl h-10 lg:h-11 px-5 text-xs lg:text-base" />
+                                    <button class="btn-two h-9 lg:h-10 absolute top-0.5 right-0.5 text-xs lg:text-sm">
+                                        Search
+                                    </button>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <!-- hero Image 2 -->
+                <div class="swiper-slide relative lg:rounded overflow-hidden">
+                    <img src="./assets/images/home/hero/hero1.png" alt="product" class="h-auto min-w-full" />
+                    <div class="absolute left-0 top-0 z-[10] h-full w-full">
+                        <div class="lg:container lg:mx-auto px-5 h-full">
+                            <div class="w-max h-full flex flex-col justify-center">
+                                <h2 class="max-w-[600px] text-[16px] lg:text-[40px] text-[#F6B76C] font-caveat">
+                                    Savor the Flavors of the World
+                                </h2>
+                                <h1
+                                    class="lg:max-w-[600px] max-w-[280px] text-[24px] lg:text-[56px] font-bold leading-[30px] lg:leading-[56px] text-white">
+                                    Explore a Culinary Journey with Our Global Cuisine Selection
+                                </h1>
+                                <div class="mt-2 lg:mt-8 relative w-[280px] lg:w-[426px]">
+                                    <input type="text" placeholder="Find your favorite dish"
+                                        class="w-[280px] lg:w-[426px] rounded-xl h-10 lg:h-11 px-5 text-xs lg:text-base" />
+                                    <button class="btn-two h-9 lg:h-10 absolute top-0.5 right-0.5 text-xs lg:text-sm">
+                                        Search
+                                    </button>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <!-- hero Image 2 -->
+                <div class="swiper-slide relative lg:rounded overflow-hidden">
+                    <img src="./assets/images/home/hero/hero1.png" alt="product" class="h-auto min-w-full" />
+                    <div class="absolute left-0 top-0 z-[10] h-full w-full">
+                        <div class="lg:container lg:mx-auto px-5 h-full">
+                            <div class="w-max h-full flex flex-col justify-center">
+                                <h2 class="max-w-[600px] text-[16px] lg:text-[40px] text-[#F6B76C] font-caveat">
+                                    Savor the Flavors of the World
+                                </h2>
+                                <h1
+                                    class="lg:max-w-[600px] max-w-[280px] text-[24px] lg:text-[56px] font-bold leading-[30px] lg:leading-[56px] text-white">
+                                    Explore a Culinary Journey with Our Global Cuisine Selection
+                                </h1>
+                                <div class="mt-2 lg:mt-8 relative w-[280px] lg:w-[426px]">
+                                    <input type="text" placeholder="Find your favorite dish"
+                                        class="w-[280px] lg:w-[426px] rounded-xl h-10 lg:h-11 px-5 text-xs lg:text-base" />
+                                    <button class="btn-two h-9 lg:h-10 absolute top-0.5 right-0.5 text-xs lg:text-sm">
+                                        Search
+                                    </button>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="swiper-pagination"></div>
+        </div>
+
+        <!-- best sell items  -->
+        <section class="lg:container lg:mx-auto lg:px-5">
+            <div class="px-5 lg:px-0">
+                <h1 class="btn-one">Popular</h1>
+                <div class="flex justify-between gap-x-5 mt-3 mb-8">
+                    <div class="">
+                        <h1 class="text-[30px] lg:text-[45px] mb-3 font-bold">
+                            Best Sell Items
+                        </h1>
+                        <p class="text-gray-400">
+                            Nostalgic Favorites Reinvented for Modern Palates
+                        </p>
+                    </div>
+                    <div class="flex gap-4 items-end lg:items-center w-max">
+                        <p class="underline lg:no-underline w-max">See All</p>
+                        <div class="lg:flex hidden gap-4 relative text-white">
+                            <div
+                                class="bg-[#EB8E78] h-11 w-11 rounded-full flex justify-center items-center custom-swiper-button-prev">
+                                <span class="material-icons text-4xl">navigate_before</span>
+                            </div>
+                            <div
+                                class="bg-[#EB8E78] h-11 w-11 rounded-full flex justify-center items-center custom-swiper-button-next">
+                                <span class="material-icons text-4xl">navigate_next</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="swiper mySwiper">
+                <div class="swiper-wrapper">
+                    <!-- product 1 -->
+                    <div class="swiper-slide relative">
+                        <div
+                            class="bg-[#EB8E78] absolute top-5 left-5 flex items-center text-white px-2 py-1 text-sm lg:text-base rounded">
+                            <span class="material-symbols-outlined font-thin lg:font-normal mb-0.5">grade</span>
+                            <span class="">8.5</span>
+                        </div>
+                        <img src="./assets/images/home/products/product1.png" alt="product" class="h-auto min-w-full" />
+                        <div class="bg-[#f7f7f7] p-4 rounded-b-xl">
+                            <h1 class="text-lg lg:text-[22px] font-bold mb-3">
+                                Grill Burger
+                            </h1>
+                            <div class="flex justify-between items-center text-xs lg:text-base">
+                                <p>20-30 min</p>
+                                <p class="text-gray-400">Burger</p>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- product 2 -->
+                    <div class="swiper-slide relative">
+                        <div
+                            class="bg-[#EB8E78] absolute top-5 left-5 flex items-center text-white px-2 py-1 text-sm lg:text-base rounded">
+                            <span class="material-symbols-outlined font-thin lg:font-normal mb-0.5">grade</span>
+                            <span class="">8.5</span>
+                        </div>
+                        <img src="./assets/images/home/products/product2.png" alt="product" class="h-auto min-w-full" />
+                        <div class="bg-[#f7f7f7] p-4 rounded-b-xl">
+                            <h1 class="text-lg lg:text-[22px] font-bold mb-3">
+                                Hawaii Pizza
+                            </h1>
+                            <div class="flex justify-between items-center text-xs lg:text-base">
+                                <p>20-30 min</p>
+                                <p class="text-gray-400">Pizza</p>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- product 3 -->
+                    <div class="swiper-slide relative">
+                        <div
+                            class="bg-[#EB8E78] absolute top-5 left-5 flex items-center text-white px-2 py-1 text-sm lg:text-base rounded">
+                            <span class="material-symbols-outlined font-thin lg:font-normal mb-0.5">grade</span>
+                            <span class="">6.5</span>
+                        </div>
+                        <img src="./assets/images/home/products/product3.png" alt="product" class="h-auto min-w-full" />
+                        <div class="bg-[#f7f7f7] p-4 rounded-b-xl">
+                            <h1 class="text-lg lg:text-[22px] font-bold mb-3">
+                                Beef Steak
+                            </h1>
+                            <div class="flex justify-between items-center text-xs lg:text-base">
+                                <p>20-30 min</p>
+                                <p class="text-gray-400">Steak</p>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- product 4 -->
+                    <div class="swiper-slide relative">
+                        <div
+                            class="bg-[#EB8E78] absolute top-5 left-5 flex items-center text-white px-2 py-1 text-sm lg:text-base rounded">
+                            <span class="material-symbols-outlined font-thin lg:font-normal mb-0.5">grade</span>
+                            <span class="">7.5</span>
+                        </div>
+                        <img src="./assets/images/home/products/product4.png" alt="product" class="h-auto min-w-full" />
+                        <div class="bg-[#f7f7f7] p-4 rounded-b-xl">
+                            <h1 class="text-lg lg:text-[22px] font-bold mb-3">Sandwich</h1>
+                            <div class="flex justify-between items-center text-xs lg:text-base">
+                                <p>20-30 min</p>
+                                <p class="text-gray-400">Sandwich</p>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- product 5 -->
+                    <div class="swiper-slide relative">
+                        <div
+                            class="bg-[#EB8E78] absolute top-5 left-5 flex items-center text-white px-2 py-1 text-sm lg:text-base rounded">
+                            <span class="material-symbols-outlined font-thin lg:font-normal mb-0.5">grade</span>
+                            <span class="">8.5</span>
+                        </div>
+                        <img src="./assets/images/home/products/product2.png" alt="product" class="h-auto min-w-full" />
+                        <div class="bg-[#f7f7f7] p-4 rounded-b-xl">
+                            <h1 class="text-lg lg:text-[22px] font-bold mb-3">
+                                Hawaii Pizza
+                            </h1>
+                            <div class="flex justify-between items-center text-xs lg:text-base">
+                                <p>20-30 min</p>
+                                <p class="text-gray-400">Pizza</p>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- product 6 -->
+                    <div class="swiper-slide relative">
+                        <div
+                            class="bg-[#EB8E78] absolute top-5 left-5 flex items-center text-white px-2 py-1 text-sm lg:text-base rounded">
+                            <span class="material-symbols-outlined font-thin lg:font-normal mb-0.5">grade</span>
+                            <span class="">9.5</span>
+                        </div>
+                        <img src="./assets/images/home/products/product3.png" alt="product" class="h-auto min-w-full" />
+                        <div class="bg-[#f7f7f7] p-4 rounded-b-xl">
+                            <h1 class="text-lg lg:text-[22px] font-bold mb-3">
+                                Beef Steak
+                            </h1>
+                            <div class="flex justify-between items-center text-xs lg:text-base">
+                                <p>20-30 min</p>
+                                <p class="text-gray-400">Steak</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- pickup delivery  -->
+        <section class="relative">
+            <div class="lg:container lg:mx-auto px-5 grid lg:grid-cols-2 items-center gap-x-5 gap-y-20">
+                <img src="./assets/images/home/pattern3.png" alt="pattern"
+                    class="absolute right-0 lg:right-0 top-[85%] h-24 lg:h-auto lg:top-5" />
+                <img src="./assets/images/home/pattern4.png" alt="pattern"
+                    class="absolute left-0 bottom-[37%] lg:bottom-5" />
+                <div class="lg:justify-self-start">
+                    <img src="./assets/images/home/pickup.png" alt="" />
+                </div>
+                <div class="lg:justify-self-end space-y-3">
+                    <p class="btn-one relative">ORDER ONLINE</p>
+                    <h1 class="text-[30px] lg:text-[45px] leading-[40px] lg:leading-[50px] font-bold">
+                        Brunch Bonanza: <br />Quick and Easy
+                    </h1>
+                    <p class="text-gray-400">
+                        Encuentra las fondas cercanas por sí quieres hacer pick up directo
+                        en las tiendas.
+                    </p>
+                    <div class="w-full flex flex-col lg:flex-row justify-between lg:items-center gap-3 pt-5">
+                        <div class="relative w-full h-[34px]">
+                            <input type="text" placeholder="Zip code"
+                                class="border w-full h-[34px] rounded-[10px] px-5 text-sm" />
+                            <span
+                                class="material-icons text-gray-400 text-sm absolute right-5 top-1/2 -translate-y-1/2">location_on</span>
+                        </div>
+                        <div class="flex items-center gap-5">
+                            <p class="btn-two w-max">Pickup</p>
+                            <p class="btn-one w-max">Delivery</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- testimonial  -->
+        <section class="lg:container relative lg:mx-auto px-5">
+            <div class="grid grid-cols-1 lg:grid-cols-2 items-center gap-x-5 gap-y-10 bg-[#E6F2E4] rounded-[10px] py-20 px-5">
+                <img src="./assets/images/home/testipattern.png" alt="pattern"
+                    class="absolute left-1/2 -translate-x-1/2 top-0 h-24 lg:h-auto" />
+                <div class="lg:justify-self-center lg:w-[416px]">
+                    <h1 class="btn-one">TESTIMONIAL</h1>
+                    <div class="flex justify-between gap-x-5 mt-3 mb-8">
+                        <div class="">
+                            <h1 class="text-[30px] lg:text-[45px] mb-3 font-bold lg:leading-[50px]">
+                                Real Story from Real Customer
+                            </h1>
+                            <p class="text-gray-400">
+                                Encuentra las fondas cercanas por sí quieres hacer pick up directo en las tiendas.
+                            </p>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="swiper review lg:w-[416px] w-full relative">
+                    <div class="swiper-wrapper">
+                        <!-- testimonial 1 -->
+                        <div class="swiper-slide relative ">
+                            <p>Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an
+                                unknown printer took a galley of type and scrambled it to make a type specimen book</p>
+                            <div class="flex items-center gap-3 mt-5">
+                                <img src="./assets/images/home/products/product1.png" alt=""
+                                    class="h-[35px] w-[35px] rounded-full">
+                                <div class="">
+                                    <h3 class="text-lg font-bold">Tanja Klausen</h3>
+                                    <P class="text-sm">Web developer</P>
+                                </div>
+                            </div>
+                        </div>
+                        <!-- testimonial 2 -->
+                        <div class="swiper-slide relative">
+                            <p>Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an
+                                unknown printer took a galley of type and scrambled it to make a type specimen book</p>
+                            <div class="flex items-center gap-3 mt-5">
+                                <img src="./assets/images/home/products/product1.png" alt=""
+                                    class="h-[35px] w-[35px] rounded-full">
+                                <div class="">
+                                    <h3 class="text-lg font-bold">Ashiqur Rahman</h3>
+                                    <P class="text-sm">Product Designer</P>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="absolute right-0 -bottom-0.5 flex items-center">
+                        <div class="flex items-center">
+                            <div class="custom-swiper-review-prev z-10 lg:cursor-pointer">
+                                <span class="material-icons text-[#A0CB9A]">navigate_before</span>
+                            </div>
+                            <div class="custom-swiper-review-next z-10 ml-5 h-max">
+                                <span class="material-icons text-[#5EAE53] text-5xl">navigate_next</span>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="absolute bottom-4 right-9">
+                        <div class="swiper-pagination-review text-[#A0CB9A]">
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+        </section>
+
+
+        <!-- timetable  -->
+        <section class="bg-[#5EAE53] py-10 overflow-hidden relative">
+            <div>
+                <img src="./assets/images/home/Oval.png" alt="pattern" class="absolute top-0 right-14" />
+            </div>
+            <div class="grid lg:grid-cols-3 gap-x-5 gap-y-14 lg:container lg:mx-auto px-5 items-center">
+                <div class="space-y-3 lg:justify-self-start">
+                    <h1 class="text-[22px] text-white font-bold">Opening Hours</h1>
+                    <div
+                        class="flex items-center justify-between xl:gap-40 gap-20 bg-[#6DD35E] text-white rounded px-2">
+                        <p>Monday</p>
+                        <p>00:00 - 23:55</p>
+                    </div>
+                    <div
+                        class="flex items-center justify-between xl:gap-40 gap-20 bg-[#66B95A] text-white rounded px-2">
+                        <p>Tuesday</p>
+                        <p>00:00 - 23:55</p>
+                    </div>
+                    <div
+                        class="flex items-center justify-between xl:gap-40 gap-20 bg-[#6DD35E] text-white rounded px-2">
+                        <p>Wednesday</p>
+                        <p>00:00 - 23:55</p>
+                    </div>
+                    <div
+                        class="flex items-center justify-between xl:gap-40 gap-20 bg-[#66B95A] text-white rounded px-2">
+                        <p>Thursday</p>
+                        <p>00:00 - 23:55</p>
+                    </div>
+                    <div
+                        class="flex items-center justify-between xl:gap-40 gap-20 bg-[#6DD35E] text-white rounded px-2">
+                        <p>Friday</p>
+                        <p>00:00 - 23:55</p>
+                    </div>
+                    <div
+                        class="flex items-center justify-between xl:gap-40 gap-20 bg-[#66B95A] text-white rounded px-2">
+                        <p>Saturday</p>
+                        <p>00:00 - 23:55</p>
+                    </div>
+                    <div
+                        class="flex items-center justify-between xl:gap-40 gap-20 bg-[#6DD35E] text-white rounded px-2">
+                        <p>Sunday</p>
+                        <p>00:00 - 23:55</p>
+                    </div>
+                </div>
+                <div class="justify-self-center order-last lg:-order-none">
+                    <img src="./assets/images/home/time.png" alt="time" class="-mb-52" />
+                </div>
+                <div class="space-y-3 lg:justify-self-end">
+                    <h1 class="text-[22px] text-white font-bold">Delivery Time</h1>
+                    <div
+                        class="flex items-center justify-between xl:gap-40 gap-20 bg-[#6DD35E] text-white rounded px-2">
+                        <p>Monday</p>
+                        <p>09:00 - 22:00</p>
+                    </div>
+                    <div
+                        class="flex items-center justify-between xl:gap-40 gap-20 bg-[#66B95A] text-white rounded px-2">
+                        <p>Tuesday</p>
+                        <p>09:00 - 22:00</p>
+                    </div>
+                    <div
+                        class="flex items-center justify-between xl:gap-40 gap-20 bg-[#6DD35E] text-white rounded px-2">
+                        <p>Wednesday</p>
+                        <p>09:00 - 22:00</p>
+                    </div>
+                    <div
+                        class="flex items-center justify-between xl:gap-40 gap-20 bg-[#66B95A] text-white rounded px-2">
+                        <p>Thursday</p>
+                        <p>09:00 - 22:00</p>
+                    </div>
+                    <div
+                        class="flex items-center justify-between xl:gap-40 gap-20 bg-[#6DD35E] text-white rounded px-2">
+                        <p>Friday</p>
+                        <p>09:00 - 22:00</p>
+                    </div>
+                    <div
+                        class="flex items-center justify-between xl:gap-40 gap-20 bg-[#66B95A] text-white rounded px-2">
+                        <p>Saturday</p>
+                        <p>09:00 - 22:00</p>
+                    </div>
+                    <div
+                        class="flex items-center justify-between xl:gap-40 gap-20 bg-[#6DD35E] text-white rounded px-2">
+                        <p>Sunday</p>
+                        <p>09:00 - 22:00</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- map  -->
+        <section class="lg:container lg:mx-auto px-5 mb-[90px]">
+            <div class="bg-[#F7F8F7] rounded-xl">
+                <div class="px-5 lg:px-10 py-5 lg:py-10 flex justify-between gap-5 lg:gap-16">
+                    <div class="w-max flex items-center gap-5 text-[#4A5E46] text-xl font-bold">
+                        <span class="material-icons">location_on</span>
+                        <p class="hidden lg:block">Location</p>
+                    </div>
+                    <input type="text" placeholder="Linde Alle 66400 Sønderborg"
+                        class="w-full bg-transparent lg:px-10 px-0 text-xs lg:text-base border-b border-gray-200" />
+                    <span
+                        class="material-icons text-gray-400 text-lg lg:text-2xl border rounded-md lg:p-2 p-1">content_copy</span>
+                </div>
+                <div class="lg:px-10 px-5 pb-5 lg:pb-10">
+                    <iframe class="rounded-xl lg:h-[400px] h-[250px]" width="100%" frameborder="0" scrolling="no"
+                        marginheight="0" marginwidth="0" id="gmap_canvas"
+                        src="https://maps.google.com/maps?width=520&amp;height=400&amp;hl=en&amp;q=Copenhagen%20city%20mall%20Copenhagen+(Nawabi%20Restaurant)&amp;t=&amp;z=12&amp;ie=UTF8&amp;iwloc=B&amp;output=embed"></iframe>
+                </div>
+            </div>
+        </section>
+
+    </main>
+    <!-- main section end -->
+
+    <!-- footer section start  -->
+    <footer class="bg-[#333333]">
+        <div
+            class="lg:container lg:mx-auto px-5 pt-16 pb-8 border-b grid grid-cols-2 lg:grid-cols-4 gap-x-5 gap-y-10 items-end">
+            <div class="space-y-3 col-span-2 lg:col-span-1">
+                <p class="text-[#D8D8D8] text-sm">
+                    Classic Comfort Food with a Twist
+                </p>
+                <a href="/">
+                    <h1 class="text-white text-[45px] leading-[42px] font-bold max-w-[250px]">
+                        Nawabi Restaurant
+                    </h1>
+                </a>
+                <p class="text-[#D8D8D8] text-xs">
+                    Linde Alle 66400 Sønderborg Telephone: 7443 6446
+                </p>
+            </div>
+            <div class="justify-self-end space-y-3">
+                <img src="./assets/images/home/footer/payment.png" alt="" />
+                <img src="./assets/images/home/footer/kontrol.png" alt="" />
+            </div>
+            <div class="justify-self-end space-y-3">
+                <img src="./assets/images/home/footer/easy.png" alt="" />
+                <div class="flex items-center gap-x-3">
+                    <div class="p-2 bg-[#EB8E78] rounded-full flex justify-center items-center w-7 h-7">
+                        <i class="fa-brands fa-facebook-f text-xs text-white"></i>
+                    </div>
+                    <div class="p-2 bg-[#EB8E78] rounded-full flex justify-center items-center w-7 h-7">
+                        <i class="fa-brands fa-twitter text-xs text-white"></i>
+                    </div>
+                    <div class="p-2 bg-[#EB8E78] rounded-full flex justify-center items-center w-7 h-7">
+                        <i class="fa-brands fa-instagram text-xs text-white"></i>
+                    </div>
+                </div>
+            </div>
+            <div class="lg:justify-self-end space-y-3 col-span-2 lg:col-span-1">
+                <h1 class="text-white font-bold text-[22px]">Subscribe</h1>
+                <div class="relative">
+                    <input type="text" placeholder="Email" class="w-full rounded-md h-11 px-5" />
+                    <button class="absolute top-1/2 -translate-y-1/2 right-4">
+                        <img src="./assets/images/home/footer/Shape.png" alt="" />
+                    </button>
+                </div>
+            </div>
+        </div>
+
+        <div
+            class="lg:container lg:mx-auto px-5 py-10 grid grid-cols-2 gap-x-5 gap-y-5 lg:flex justify-between w-full items-center">
+            <div class="flex items-center gap-x-3 w-max">
+                <img src="./assets/images/home/footer/cc-visa.png" alt="" />
+                <img src="./assets/images/home/footer/cc-mastercard.png" alt="" />
+                <img src="./assets/images/home/footer/cc-apple-pay.png" alt="" />
+            </div>
+            <div
+                class="flex items-center justify-self-end gap-2 lg:gap-5 text-[12px] lg:text-base text-white w-full lg:justify-end">
+                <p class="">Terms & Conditions</p>
+                <p class="">Privacy</p>
+            </div>
+            <div class="col-span-2 justify-self-center">
+                <p class="text-gray-400 text-[12px] lg:text-base w-full lg:w-max">
+                    © 2023 Nawabi Restaurant
+                </p>
+            </div>
+        </div>
+    </footer>
+    <!-- footer section end  -->
+
+    <!-- JS -->
+    <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+    <!-- main js file  -->
+    <script src="./assets/js/main.js"></script>
+</body>
+
+</html>
