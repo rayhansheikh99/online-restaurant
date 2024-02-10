@@ -64,7 +64,7 @@
         <div class="flex h-full lg:container lg:mx-auto lg:px-5 lg:pb-[90px] lg:pt-8 mt-28 lg:mt-0">
             <div><img src="/assets/images/home/pattern4.png" alt="pattern" class="absolute top-1/2 left-0"></div>
             <div id="menuOnline"
-                class="w-[200px] lg:w-[250px] lg:flex flex menu-order-close flex-col gap-y-3 space-y-3 fixed -left-[200px] lg:left-[0px] duration-500 top-28 lg:top-0 px-5 bottom-0 z-[3] bg-white lg:relative">
+                class="w-[200px] lg:w-[250px] lg:flex flex menu-order-close flex-col gap-y-3 fixed lg:sticky lg:h-max -left-[200px] lg:left-[0px] duration-500 top-28 lg:top-10 px-5 bottom-0 z-[3] bg-white">
                 <div class="flex justify-between items-center gap-1">
                     <h2 class="text-[22px] font-bold">Menu</h2>
                     <span onclick="menuToggle();" class="material-symbols-outlined lg:hidden">
@@ -82,7 +82,7 @@
                     <p>Beverage</p>
                 </div>
                 <div
-                    class="absolute bg-[#5EAE53] py-2 px-4 lg:bottom-0 bottom-5 flex items-center text-white gap-3 rounded">
+                    class="absolute lg:relative bg-[#5EAE53] w-[126px] py-2 pl-4 mt-20 bottom-5 flex items-center text-white gap-3 rounded">
                     <p class="">Order</p>
                     <span class="material-symbols-outlined ">
                         arrow_right_alt
@@ -117,6 +117,9 @@
                         </div>
                     </div>
                     <div class="swiper-pagination"></div>
+                </div>
+                <div id="data-container" class="grid grid-cols-4 gap-5 bg-[#F2F2F2] p-10 mt-20 rounded-2xl">
+                    <!-- Data will be inserted here -->
                 </div>
             </div>
         </div>
@@ -187,6 +190,7 @@
     <!-- JS -->
     <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
     <script src="./assets/js/main.js"></script>
+    <script src="./assets/js/products.js"></script>
 </body>
 
 </html>
