@@ -135,18 +135,18 @@
                         <!-- Data will be inserted here -->
                     </div>
                 </section>
-                <div id="myModal" class="modal max-h-[930px]">
-                    <div class="modal-content relative top-1/2 -translate-y-1/2">
+                <div id="myModal" class="modal h-full ">
+                    <div class="modal-content lg:max-h-[930px] max-h-[450px] overflow-y-auto modal-scrollbar relative top-1/2 -translate-y-1/2">
                         <button
                             class="absolute top-0 right-3 closeModal z-10 lg:cursor-pointer text-xl text-[#747474] flex items-center gap-2">
                             <span class="text-xs">close</span>
                             <span>x</span>
                         </button>
-                        <div class="grid grid-cols-2 gap-5">
+                        <div class="grid grid-cols-1 lg:grid-cols-2 gap-5">
                             <div>
                                 <img id="modalImage" src="" alt="" class="min-w-full h-full">
                             </div>
-                            <div class="py-10 overflow-y-auto">
+                            <div class="py-10 overflow-y-auto px-5 lg:px-0">
                                 <h3 id="modalName" class="text-xl font-bold mb-1"></h3>
                                 <p id="modalCat" class="text-[#3333337c]"></p>
                                 <p id="modalDesc" class="text-[#333333] max-w-[222px] my-3"></p>

@@ -211,6 +211,9 @@ section {
 .no-scrollbar::-webkit-scrollbar {
   scrollbar-width: none;
 }
+.modal-scrollbar::-webkit-scrollbar {
+  scrollbar-width: 1px;
+}
 
 /* Modal styles */
 .modal {

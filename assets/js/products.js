@@ -33,13 +33,13 @@ function displayData(data, containerId) {
         div.innerHTML = `
             <img src=${item.image} alt="product" class="h-auto min-w-full" />
             <div class="flex flex-wrap justify-between gap-2 mt-5 mb-3 px-5">
-                <p class="font-bold text-xl">${item.name}</p>
-                <p class="text-[#33333386]">${item.category}</p>
+                <p class="font-bold text-base lg:text-xl">${item.name}</p>
+                <p class="text-[#33333386] text-[11px]">${item.category}</p>
             </div>
-            <p class="px-5">${item.description}</p>
+            <p class="px-5 text-xs lg:text-base">${item.description}</p>
             <div class="flex flex-wrap gap-1 justify-between mt-3 pb-5  px-5">
-                <p class="font-bold text-xl">DKK ${item.price.toFixed(2)}</p>
-                <p class="text-sm bg-[#5EAE53] text-white py-2.5 w-max rounded-[5px] px-5">Order Now</p>
+                <p class="font-bold text-base lg:text-xl">DKK ${item.price.toFixed(2)}</p>
+                <p class="text-xs lg:text-sm bg-[#5EAE53] text-white py-1 lg:py-2.5 w-max rounded-[5px] px-2 lg:px-5">Order Now</p>
             </div>
         `;
         // Add click event listener to each card
