@@ -204,9 +204,12 @@ section {
 }
 
 .active {
-  font-weight: bold;
   color: var(--color-bg);
   /* Example: Style to indicate active menu item */
+}
+
+.no-scrollbar::-webkit-scrollbar {
+  scrollbar-width: none;
 }
 
 /* Modal styles */
@@ -261,8 +264,11 @@ section {
   .menu-order {
     animation: menu 0.6s ease-in both;
   }
+  section {
+    margin-top: 40px;
+  }
 
-  .menu-order-close {
+  /* .menu-order-close {
     animation: close 0.6s ease-in both;
   }
 
@@ -274,7 +280,7 @@ section {
     to {
       left: -200px;
     }
-  }
+  } */
 
   @keyframes menu {
     from {

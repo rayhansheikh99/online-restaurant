@@ -32,12 +32,15 @@ function displayData(data, containerId) {
         div.className = 'bg-white rounded-2xl lg:cursor-pointer';
         div.innerHTML = `
             <img src=${item.image} alt="product" class="h-auto min-w-full" />
-            <div class="flex justify-between gap-2 mt-5 mb-3 px-5">
+            <div class="flex flex-wrap justify-between gap-2 mt-5 mb-3 px-5">
                 <p class="font-bold text-xl">${item.name}</p>
                 <p class="text-[#33333386]">${item.category}</p>
             </div>
             <p class="px-5">${item.description}</p>
-            <p class="font-bold text-xl text-[#5EAE53] mt-3 pb-5 px-5">DKK ${item.price.toFixed(2)}</p>
+            <div class="flex flex-wrap gap-1 justify-between mt-3 pb-5  px-5">
+                <p class="font-bold text-xl">DKK ${item.price.toFixed(2)}</p>
+                <p class="text-sm bg-[#5EAE53] text-white py-2.5 w-max rounded-[5px] px-5">Order Now</p>
+            </div>
         `;
         // Add click event listener to each card
         div.addEventListener('click', function () {
